@@ -2,6 +2,7 @@
   "name": "group-website",
   "version": "0.1.0",
   "private": true,
+  "author": "Huakun Shen",
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
@@ -17,5 +18,12 @@
     "@types/node": "^20.8.2",
     "eslint": "^8.50.0",
     "nuxt": "^3.7.4"
+  },
+  "dependencies": {
+    "@nuxt/content": "^2.8.5",
+    "@nuxt/image": "rc",
+    "@nuxt/ui": "^2.9.0",
+    "@nuxtjs/tailwindcss": "^6.8.0",
+    "zod": "^3.22.4"
   }
 }
