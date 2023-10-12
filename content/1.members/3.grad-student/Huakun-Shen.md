@@ -16,7 +16,6 @@ cta:
 secondary:
   - My GitHub →
   - https://github.com/HuakunShen
-<!-- snippet: npx nuxi@latest init docus-app -t nuxtlabs/docus-starter -->
 ---
 #title
 Huakun Shen
