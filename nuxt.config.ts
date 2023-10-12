@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   // https://github.com/nuxt-themes/docus
   extends: '@nuxt-themes/docus',
   devtools: { enabled: true },
-  ssr: true, // this will be a static site with no server
+  ssr: true,
   modules: [
     // Remove it if you don't use Plausible analytics
     // https://github.com/nuxt-modules/plausible

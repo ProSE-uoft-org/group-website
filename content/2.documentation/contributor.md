@@ -6,6 +6,8 @@ draft: false
 
 ## Project Setup
 
+If you want to preview the changes locally, you will need to setup the project locally. Adding a new member doesn't require you to setup the project locally, simply add a new markdown file in `content/1.members` directory.
+
 You will need to install nodejs and run the project with a package manager. Nodejs comes with `npm`, you can use it. But I recommend [`bun`](https://bun.sh/) as it's much faster.
 
 ::code-group
@@ -62,7 +64,9 @@ It can be a remote image, or a local image. If it's a local image, you should pu
 
 You can add more details about yourself in the markdown file if you want. Standard markdown syntax is fully supported.
 
-This site is built with [`@nuxt/content`](https://content.nuxt.com/) and [`docus`](https://docus.dev/) theme, which gives you more flexibility to customize the content and styling.
+This site is built with [`@nuxt/content`](https://content.nuxt.com/) and [`docus`](https://docus.dev/) theme, which gives you more flexibility to customize the content and styling. In markdown, you can write `html` and `css`. [TailwindCSS](https://tailwindcss.com/) is supported to make styling easier.
+
+For example `<span class="bg-red-300">Hello World</span>` gives you <span class="bg-red-500">Hello World</span>.
 
 Read https://docus.dev/api/components for built-in components you can use. Read author's example at `content/1.members/3.grad-student/Huakun-Shen.md`.
 
@@ -112,5 +116,5 @@ Read https://docus.dev/api/components for built-in components you can use. Read 
 Fork this repo, make changes, and submit a pull request. The maintainer will merge your changes if everything looks good.
 
 ::alert{type="warning"}
-Make sure you run the development server locally to make sure your changes look good and doesn't break anything.
+It is recommended you run the development server locally to make sure your changes look good and doesn't break anything.
 ::
