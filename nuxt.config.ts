@@ -10,6 +10,15 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxt/ui",
     "@nuxt/image",
-    "@nuxtjs/tailwindcss"
-  ]
+    "@nuxtjs/tailwindcss",
+    "nuxt-gtag",
+  ],
+  gtag: {
+    // The Google Analytics 4 property ID to use for tracking
+    id: "G-887SRCJHXZ",
+    // Additional configuration for the Google Analytics 4 property
+    config: {
+      page_title: 'UT-SE-Group-Website'
+    }
+  }
 })
