@@ -10,15 +10,16 @@ const alumnis = await useAllAlumniQuery().sort({ name: 1 }).find();
 <template>
   <div class="flex justify-center">
     <div class="max-w-screen-lg">
+      
       <!-- <img src="/UofT.jpeg" /> -->
       <h1 class="text-ut text-4xl font-bold">PLSE Group</h1>
-      <h2 class="text-3xl text-center mt-10">Faculty</h2>
+      <h2 class="text-3xl mt-10">Faculty</h2>
       <PeopleList :people="facultyMembers" />
-      <h2 class="text-3xl text-center mt-10">Post Doc</h2>
+      <h2 class="text-3xl mt-10">Post Doc</h2>
       <PeopleList :people="postDocMembers" />
-      <h2 class="text-3xl text-center mt-10">Grad Student</h2>
+      <h2 class="text-3xl mt-10">Grad Student</h2>
       <PeopleList :people="gradStudents" />
-      <h2 class="text-3xl text-center mt-10">Alumni</h2>
+      <h2 class="text-3xl mt-10">Alumni</h2>
       <PeopleList :people="alumnis" />
     </div>
   </div>

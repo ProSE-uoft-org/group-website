@@ -5,7 +5,7 @@ defineProps<{ people: PersonSchema[] }>();
 </script>
 <template>
   <div>
-    <div class="grid grid-cols-2 md:grid-cols-3">
+    <div class="grid grid-cols-2 md:grid-cols-4">
       <Person
         v-for="person in people"
         :key="person.name"

@@ -35,8 +35,8 @@ export default defineAppConfig({
       },
       textLinks: [
         {
-          text: "Members",
-          href: "/members",
+          text: "Introduction",
+          href: "/introduction",
         },
       ],
       iconLinks: [],
