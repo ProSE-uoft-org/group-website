@@ -4,8 +4,8 @@ For developer who needs to maintain this site.
 
 ## Tech Stack
 
-> Chaning content only requires editing Markdown files. 
-> 
+> Changing content only requires editing Markdown files.
+>
 > If a developer needs to fully understand and maintain this site, he/she needs to be familiar with the following tech stack.
 
 - JavaScript and TypeScript
@@ -16,16 +16,15 @@ For developer who needs to maintain this site.
 - [`docus`](https://docus.dev/): A nuxt theme for documentation sites based on `@nuxt/content`
   - This theme simplifies the process of building this website, as it comes with nice-looking layout and styling, a documentation-style sidebar, and a search bar.
 
-
 ## Project Structure
 
 - The root page is `pages/index.vue`.
 - `components/` directory contains all the components used in this site, such as how a member is displayed and how members are listed.
 - All content is in `content` directory.
   - [`@nuxt/content`](https://content.nuxt.com/) allows querying the markdown files as a database.
+  - The documentation page basically mirrors the directory structure of `content/` on file system. Markdown files in this folder will be rendered as HTML pages and searchable. Read [@nuxt/content/markdown](https://content.nuxt.com/usage/markdown) for advanced usage such as hiding a page in production build.
 - The hooks for loading members from markdown files are in `composables/members-query.ts`.
   - Read [@nuxt/content/query-content](https://content.nuxt.com/composables/query-content) for how it works.
-
 
 ## Deployment
 
@@ -34,4 +33,3 @@ For developer who needs to maintain this site.
 Basically, instead of `npm run build`, we need to run `npm run generate` to generate static files. The static files will be generated in `.output/public` directory. Use `npx serve .output/public` to start a local server to preview the static site.
 
 Then we can copy the files in `.output/public` directory to `cs.toronto.edu` server to deploy the site.
-

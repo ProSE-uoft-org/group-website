@@ -6,7 +6,7 @@ draft: false
 
 ## Project Setup
 
-If you want to preview the changes locally, you will need to setup the project locally. Adding a new member doesn't require you to setup the project locally, simply add a new markdown file in `content/1.members` directory.
+If you want to preview the changes locally, you will need to setup the project locally. Adding or editing a new member doesn't require setting up the project locally, simply modify markdown files in `content/1.members` directory.
 
 You will need to install nodejs and run the project with a package manager. Nodejs comes with `npm`, you can use it. But I recommend [`bun`](https://bun.sh/) as it's much faster.
 
@@ -108,8 +108,9 @@ Read https://docus.dev/api/components for built-in components you can use. Read 
 ::
 
 
+## Editing Your Content
 
-</Terminal>
+Simple content modification can be done fully in browser without a dev environment. In the documentation page, there is a "Edit this page" button at the bottom of the page. Click it to edit the markdown file of the current page.
 
 ## Pull Request
 
