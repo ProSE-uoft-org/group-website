@@ -8,7 +8,6 @@ export default defineNuxtConfig({
     // https://github.com/nuxt-modules/plausible
     // '@nuxtjs/plausible',
     "@nuxt/content",
-    "@nuxt/ui",
     "@nuxt/image",
     "@nuxtjs/tailwindcss",
     "nuxt-gtag",

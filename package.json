@@ -22,9 +22,13 @@
   "dependencies": {
     "@nuxt/content": "^2.8.5",
     "@nuxt/image": "rc",
-    "@nuxt/ui": "^2.9.0",
     "@nuxtjs/tailwindcss": "^6.8.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "lucide-vue-next": "^0.288.0",
     "nuxt-gtag": "^1.1.1",
+    "tailwind-merge": "^1.14.0",
+    "tailwindcss-animate": "^1.0.7",
     "zod": "^3.22.4"
   }
 }
