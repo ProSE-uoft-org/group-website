@@ -1,0 +1,25 @@
+# This CI Pipeline is used to make sure the website can be built
+name: Build CI
+
+on:
+  push:
+  pull_request:
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup node env 🏗
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          check-latest: true
+      - name: Bun Setup
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+      - name: INstall Dependencies
+        run: bun install
+      - name: Generate Static Website
+        run: bun generate
