@@ -1,57 +1,20 @@
-# Docus Starter
+# University of Toronto Computer Science Software Engineering
 
-Starter template for [Docus](https://docus.dev).
-
-## Clone
-
-Clone the repository (using `nuxi`):
-
-```bash
-npx nuxi init -t themes/docus
-```
-
-## Setup
-
-Install dependencies:
-
-```bash
-yarn install
-```
+> This is a group website for the Software Engineering group at the University of Toronto Computer Science department.
+> Containing information about the group, its members, and its projects.
 
 ## Development
 
-```bash
-yarn dev
-```
+> Here are the notes for maintainers of this site.
 
-## Edge Side Rendering
-
-Can be deployed to Vercel Functions, Netlify Functions, AWS, and most Node-compatible environments.
-
-Look at all the available presets [here](https://v3.nuxtjs.org/guide/deploy/presets).
+[Bun](https://bun.sh/) is used as the package manager and JS runtime to develop this website. Nodejs and npm also work, but bun is much faster.
 
 ```bash
-yarn build
+bun install     # install dependencies
+bun dev         # start dev server
+bun generate    # generate static files
 ```
 
-## Static Generation
+CICD has been setup to auto build the site and generate a release for every commit to the `main` branch. The release asset is a tarball of the static site files. The tarball is named `static_website.tar.gz`.
 
-Use the `generate` command to build your application.
-
-The HTML files will be generated in the .output/public directory and ready to be deployed to any static compatible hosting.
-
-```bash
-yarn generate
-```
-
-## Preview build
-
-You might want to preview the result of your build locally, to do so, run the following command:
-
-```bash
-yarn preview
-```
-
----
-
-For a detailed explanation of how things work, check out [Docus](https://docus.dev).
+For more details about how to contribute to this website and maintain/deploy it, read [content/2.documentation/contributor.md](./content/2.documentation/contributor.md) and [content/2.documentation/developer.md](./content/2.documentation/developer.md).

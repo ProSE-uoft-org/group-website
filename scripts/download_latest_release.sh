@@ -1,6 +1,4 @@
 #!/bin/bash
-
-# Replace with your GitHub username and repository name
 USERNAME="ProSE-uoft-org"
 REPO="group-website"
 ASSET_NAME="static_website.tar.gz"
