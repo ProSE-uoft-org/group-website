@@ -6,7 +6,7 @@ export default defineAppConfig({
       github: "ProSE-uoft-org/group-website",
     },
     github: {
-      dir: ".starters/default/content",
+      dir: "content",
       branch: "main",
       repo: "group-website",
       owner: "ProSE-uoft-org",
