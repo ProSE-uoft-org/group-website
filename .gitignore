@@ -13,3 +13,4 @@ sw.*
 
 # Local Netlify folder
 .netlify
+static_website.tar.gz
