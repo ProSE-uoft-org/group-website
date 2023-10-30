@@ -1,7 +1,8 @@
-# University of Toronto Computer Science Software Engineering
+# ProSE: Programming Languages and Software Engineering
 
-> This is a group website for the Software Engineering group at the University of Toronto Computer Science department.
-> Containing information about the group, its members, and its projects.
+> This is a group website for the Programming Languages and Software Engineering
+> group at the University of Toronto Computer Science department. Containing
+> information about the group, its members, and its projects.
 
 ## Development
 
