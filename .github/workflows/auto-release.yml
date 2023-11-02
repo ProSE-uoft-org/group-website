@@ -28,7 +28,7 @@ jobs:
         run: bun install
       - name: Generate Static Website
         run: |
-          BASE_URL=/~huakunshen bun generate
+          BASE_URL=/~prose bun generate
           mv .output/public static_website
           tar -czvf static_website.tar.gz static_website
       - name: Set Release Name
