@@ -72,8 +72,7 @@ It can be a remote image, or a local image. If it's a local image, you should pu
 ### Website
 
 If you include the `website` field, clicking on your avatar will link to the website you specified. 
-<!-- markdown-link-check-disable-next-line -->
-Otherwise it by default will link to your profile on this website. For example, for me it will link to [/members/grad-student/huakun-shen](/members/grad-student/huakun-shen).
+Otherwise it by default will link to your profile on this website. For example, for me it will link to [/members/grad-student/huakun-shen](/members/grad-student/huakun-shen). <!-- markdown-link-check-disable-line -->
 
 <details>
 <summary>More Details</summary>
