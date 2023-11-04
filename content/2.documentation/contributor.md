@@ -56,7 +56,6 @@ year: 2023 # necessary for an alumni
 Anything about yourself.
 ```
 
-
 ::alert{type="warning"}
 Only `name` field is necessary, other fields are all optional.
 ::
@@ -71,10 +70,9 @@ It can be a remote image, or a local image. If it's a local image, you should pu
 
 ### Website
 
-If you include the `website` field, clicking on your avatar will link to the website you specified. 
+If you include the `website` field, clicking on your avatar will link to the website you specified.
 
-Otherwise it by default will link to your profile on this website. For example, for me it will link to 
-<a src="/members/grad-student/huakun-shen">/members/grad-student/huakun-shen</a>
+Otherwise it by default will link to your profile on this website. For example, for me it will link to :skip-check-link{url=/members/grad-student/huakun-shen}
 
 <details>
 <summary>More Details</summary>
@@ -85,10 +83,9 @@ For example, if you want to link to `https://huakunshen.com`, you can put `https
 
 The relative path is just the file path of your markdown file relative to the `content` folder (but without the numbers, the numbers is only for sorting). For example, if your markdown file is at `content/1.members/3.grad-student/Huakun-Shen.md`, then the relative path is `/members/grad-student/huakun-shen`.
 
-
 However, the website has been configured to auto link to your profile on this website if a `website` field is not specified. So you can just leave it blank if you don't have a website yet.
-</details>
 
+</details>
 
 ### Content
 
@@ -104,36 +101,44 @@ Here is a sample of a terminal docus component.
 
 ::card
 #title
-  What is displayed
+What is displayed
 #description
-  ```md
-  ::terminal
-  ---
-  content:
-  - npm install
-  - npm run dev
-  - npm run generate
-  ---
-  ::
-  ```
+
+```md
+## ::terminal
+
+content:
+
+- npm install
+- npm run dev
+- npm run generate
+
+---
+
+::
+```
+
 ::
 
 ::card
 #title
 What is displayed
 #description
-  ::terminal
-  ---
-  content:
-  - npm install
-  - npm run dev
-  - npm run generate
-  ---
-  ::
+::terminal
+
+---
+
+content:
+
+- npm install
+- npm run dev
+- npm run generate
+
+---
 
 ::
 
-
+::
 
 ## Editing Your Content
 
@@ -160,6 +165,3 @@ For example, I forked this repo to https://github.com/HuakunShen/ut-prose-group-
 Prepend `gitpod.io/#` to your github repo url to open it in gitpod.
 
 <code><span class="text-red-400">gitpod.io/#</span>https://github.com/HuakunShen/ut-prose-group-website</code>
-
-
-
