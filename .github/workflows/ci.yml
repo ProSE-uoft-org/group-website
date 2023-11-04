@@ -19,4 +19,4 @@ jobs:
       - name: Install Dependencies
         run: bun install
       - name: Generate Static Website
-        run: bun generate
+        run: BASE_URL=/${{ github.event.repository.name }} bun generate
