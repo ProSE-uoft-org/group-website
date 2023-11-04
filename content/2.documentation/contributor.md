@@ -73,7 +73,8 @@ It can be a remote image, or a local image. If it's a local image, you should pu
 
 If you include the `website` field, clicking on your avatar will link to the website you specified. 
 
-Otherwise it by default will link to your profile on this website. For example, for me it will link to [/members/grad-student/huakun-shen](/members/grad-student/huakun-shen).
+Otherwise it by default will link to your profile on this website. For example, for me it will link to 
+<a src="/members/grad-student/huakun-shen">/members/grad-student/huakun-shen</a>
 
 <details>
 <summary>More Details</summary>
