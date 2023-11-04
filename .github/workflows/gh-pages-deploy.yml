@@ -61,10 +61,10 @@ jobs:
           static_site_generator: nuxt
       - name: Verify markdown links
         uses: gaurav-nelson/github-action-markdown-link-check@v1
-      # - name: Bun Setup
-      #   uses: oven-sh/setup-bun@v1
-      #   with:
-      #     bun-version: latest
+      - name: Bun Setup
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
       # - name: Install Dependencies
       #   run: bun install
       # - name: Generate Static Website
