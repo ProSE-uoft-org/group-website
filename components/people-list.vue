@@ -1,7 +1,8 @@
 <script setup lang="ts">
+import { ParsedContent } from "@nuxt/content/dist/runtime/types";
 import { PersonSchema } from "~/utils/types";
 
-defineProps<{ people: PersonSchema[] }>();
+defineProps<{ people: Array<PersonSchema & ParsedContent> }>();
 </script>
 <template>
   <div>
@@ -11,7 +12,7 @@ defineProps<{ people: PersonSchema[] }>();
         :key="person.name"
         :name="person.name"
         :avatar="person.avatar"
-        :website="person.website"
+        :website="person.website || person._path"
       />
     </div>
   </div>
