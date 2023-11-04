@@ -75,6 +75,9 @@ If you include the `website` field, clicking on your avatar will link to the web
 <!-- Otherwise it by default will link to your profile on this website. For example, for me it will link to :skip-check-link{url=/members/grad-student/huakun-shen} -->
 <!-- markdown-link-check-disable-next-line -->
 Otherwise it by default will link to your profile on this website. For example, for me it will link to [/members/grad-student/huakun-shen](/members/grad-student/huakun-shen)
+If you include the `website` field, clicking on your avatar will link to the website you specified. 
+<!-- markdown-link-check-disable-next-line -->
+Otherwise it by default will link to your profile on this website. For example, for me it will link to [/members/grad-student/huakun-shen](/members/grad-student/huakun-shen).
 
 <details>
 <summary>More Details</summary>
