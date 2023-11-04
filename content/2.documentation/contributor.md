@@ -72,7 +72,9 @@ It can be a remote image, or a local image. If it's a local image, you should pu
 
 If you include the `website` field, clicking on your avatar will link to the website you specified.
 
-Otherwise it by default will link to your profile on this website. For example, for me it will link to :skip-check-link{url=/members/grad-student/huakun-shen}
+<!-- Otherwise it by default will link to your profile on this website. For example, for me it will link to :skip-check-link{url=/members/grad-student/huakun-shen} -->
+<!-- markdown-link-check-disable-next-line -->
+Otherwise it by default will link to your profile on this website. For example, for me it will link to [/members/grad-student/huakun-shen](/members/grad-student/huakun-shen)
 
 <details>
 <summary>More Details</summary>
@@ -97,49 +99,6 @@ For example `<span class="bg-red-300">Hello World</span>` gives you <span class=
 
 Read https://docus.dev/api/components for built-in components you can use. Read author's example at `content/1.members/3.grad-student/Huakun-Shen.md`.
 
-Here is a sample of a terminal docus component.
-
-::card
-#title
-What is displayed
-#description
-
-```md
-## ::terminal
-
-content:
-
-- npm install
-- npm run dev
-- npm run generate
-
----
-
-::
-```
-
-::
-
-::card
-#title
-What is displayed
-#description
-::terminal
-
----
-
-content:
-
-- npm install
-- npm run dev
-- npm run generate
-
----
-
-::
-
-::
-
 ## Editing Your Content
 
 Simple content modification can be done fully in browser without a dev environment. In the documentation page, there is a "Edit this page" button at the bottom of the page. Click it to edit the markdown file of the current page.
@@ -155,6 +114,7 @@ It is recommended you run the development server locally to make sure your chang
 If you don't want to setup a local environment, you can also use cloud dev env in browser after forking it. Here are some sample services.
 
 ### Codesandbox
+
 <!-- markdown-link-check-disable-next-line -->
 Or simply edit your github url to <code>https://github<span class="text-red-400">box</span>.com/your-github-username/website</code> to open it in codesandbox.
 
