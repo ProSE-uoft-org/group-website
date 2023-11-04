@@ -27,6 +27,9 @@ concurrency:
 jobs:
   # Build job
   build:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -40,7 +43,7 @@ jobs:
       - name: Install Dependencies
         run: bun install
       - name: Generate Static Website
-        run: bun generate
+        run: BASE_URL=/${{ github.event.repository.name }} bun generate
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
