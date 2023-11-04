@@ -1,7 +1,6 @@
 <script setup lang="ts">
 defineProps<{ name: string; avatar?: string; website?: string }>();
 const config = useRuntimeConfig();
-console.log(config.public.baseURL);
 function composeAvatarUrl(baseUrl: string, avatarUrl: string): string {
   if (avatarUrl.startsWith("/")) {
     // image is a local image
