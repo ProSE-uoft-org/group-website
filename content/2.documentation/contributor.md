@@ -125,3 +125,14 @@ For example, I forked this repo to https://github.com/HuakunShen/ut-prose-group-
 Prepend `gitpod.io/#` to your github repo url to open it in gitpod.
 
 <code><span class="text-red-400">gitpod.io/#</span>https://github.com/HuakunShen/ut-prose-group-website</code>
+
+### Stackblitz
+
+After making changes on a fork, open it in stackblitz with the following url. (replace the username and repo name)
+
+<!-- markdown-link-check-disable -->
+
+https://stackblitz.com/fork/github/HuakunShen/ut-prose-group-website
+
+https://stackblitz.com/fork/github/<username>/<repo-name>
+
