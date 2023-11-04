@@ -30,15 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-        with:
-          # Automatically inject router.base in your Nuxt configuration file and set
-          # target to static (https://nuxtjs.org/docs/configuration-glossary/configuration-target/).
-          #
-          # You may remove this line if you want to manage the configuration yourself.
-          static_site_generator: nuxt
+        uses: actions/checkout@v4
       - name: Verify markdown links
         uses: gaurav-nelson/github-action-markdown-link-check@v1
       - name: Bun Setup
@@ -49,6 +41,27 @@ jobs:
         run: bun install
       - name: Generate Static Website
         run: bun generate
+
+      # - name: Checkout
+      #   uses: actions/checkout@v3
+      # - name: Setup Pages
+      #   uses: actions/configure-pages@v3
+      #   with:
+      #     # Automatically inject router.base in your Nuxt configuration file and set
+      #     # target to static (https://nuxtjs.org/docs/configuration-glossary/configuration-target/).
+      #     #
+      #     # You may remove this line if you want to manage the configuration yourself.
+      #     static_site_generator: nuxt
+      # - name: Verify markdown links
+      #   uses: gaurav-nelson/github-action-markdown-link-check@v1
+      # - name: Bun Setup
+      #   uses: oven-sh/setup-bun@v1
+      #   with:
+      #     bun-version: latest
+      # - name: Install Dependencies
+      #   run: bun install
+      # - name: Generate Static Website
+      #   run: bun generate
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
