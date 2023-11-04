@@ -155,7 +155,7 @@ It is recommended you run the development server locally to make sure your chang
 If you don't want to setup a local environment, you can also use cloud dev env in browser after forking it. Here are some sample services.
 
 ### Codesandbox
-
+<!-- markdown-link-check-disable-next-line -->
 Or simply edit your github url to <code>https://github<span class="text-red-400">box</span>.com/your-github-username/website</code> to open it in codesandbox.
 
 For example, I forked this repo to https://github.com/HuakunShen/ut-prose-group-website, then I can open it in codesandbox with https://githubbox.com/HuakunShen/ut-prose-group-website.
