@@ -11,12 +11,10 @@ const postDocMembers = await useAllStaffAndPostDocQuery()
   .find();
 const gradStudents = await useAllGradStudentQuery().sort({ name: 1 }).find();
 const alumnis = await useAllAlumniQuery().sort({ year: -1 }).find();
-
 </script>
 <template>
   <div class="flex justify-center">
     <div class="max-w-screen-lg">
-      
       <!-- <img src="/UofT.jpeg" /> -->
       <h1 class="text-ut text-4xl font-bold">
         University of Toronto PLSE Group
