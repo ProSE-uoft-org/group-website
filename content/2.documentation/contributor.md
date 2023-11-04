@@ -56,7 +56,6 @@ year: 2023 # necessary for an alumni
 Anything about yourself.
 ```
 
-
 ::alert{type="warning"}
 Only `name` field is necessary, other fields are all optional.
 ::
@@ -71,6 +70,11 @@ It can be a remote image, or a local image. If it's a local image, you should pu
 
 ### Website
 
+If you include the `website` field, clicking on your avatar will link to the website you specified.
+
+<!-- Otherwise it by default will link to your profile on this website. For example, for me it will link to :skip-check-link{url=/members/grad-student/huakun-shen} -->
+<!-- markdown-link-check-disable-next-line -->
+Otherwise it by default will link to your profile on this website. For example, for me it will link to [/members/grad-student/huakun-shen](/members/grad-student/huakun-shen)
 If you include the `website` field, clicking on your avatar will link to the website you specified. 
 <!-- markdown-link-check-disable-next-line -->
 Otherwise it by default will link to your profile on this website. For example, for me it will link to [/members/grad-student/huakun-shen](/members/grad-student/huakun-shen).
@@ -84,10 +88,9 @@ For example, if you want to link to `https://huakunshen.com`, you can put `https
 
 The relative path is just the file path of your markdown file relative to the `content` folder (but without the numbers, the numbers is only for sorting). For example, if your markdown file is at `content/1.members/3.grad-student/Huakun-Shen.md`, then the relative path is `/members/grad-student/huakun-shen`.
 
-
 However, the website has been configured to auto link to your profile on this website if a `website` field is not specified. So you can just leave it blank if you don't have a website yet.
-</details>
 
+</details>
 
 ### Content
 
@@ -98,41 +101,6 @@ This site is built with [`@nuxt/content`](https://content.nuxt.com/) and [`docus
 For example `<span class="bg-red-300">Hello World</span>` gives you <span class="bg-red-500">Hello World</span>.
 
 Read https://docus.dev/api/components for built-in components you can use. Read author's example at `content/1.members/3.grad-student/Huakun-Shen.md`.
-
-Here is a sample of a terminal docus component.
-
-::card
-#title
-  What is displayed
-#description
-  ```md
-  ::terminal
-  ---
-  content:
-  - npm install
-  - npm run dev
-  - npm run generate
-  ---
-  ::
-  ```
-::
-
-::card
-#title
-What is displayed
-#description
-  ::terminal
-  ---
-  content:
-  - npm install
-  - npm run dev
-  - npm run generate
-  ---
-  ::
-
-::
-
-
 
 ## Editing Your Content
 
@@ -150,6 +118,7 @@ If you don't want to setup a local environment, you can also use cloud dev env i
 
 ### Codesandbox
 
+<!-- markdown-link-check-disable-next-line -->
 Or simply edit your github url to <code>https://github<span class="text-red-400">box</span>.com/your-github-username/website</code> to open it in codesandbox.
 
 For example, I forked this repo to https://github.com/HuakunShen/ut-prose-group-website, then I can open it in codesandbox with https://githubbox.com/HuakunShen/ut-prose-group-website.
@@ -160,5 +129,13 @@ Prepend `gitpod.io/#` to your github repo url to open it in gitpod.
 
 <code><span class="text-red-400">gitpod.io/#</span>https://github.com/HuakunShen/ut-prose-group-website</code>
 
+### Stackblitz
 
+After making changes on a fork, open it in stackblitz with the following url. (replace the username and repo name)
+
+<!-- markdown-link-check-disable -->
+
+https://stackblitz.com/fork/github/HuakunShen/ut-prose-group-website
+
+https://stackblitz.com/fork/github/<username>/<repo-name>
 
