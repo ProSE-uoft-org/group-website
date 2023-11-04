@@ -37,4 +37,13 @@ export default defineNuxtConfig({
       page_title: "UT-SE-Group-Website",
     },
   },
+  typescript: {
+    tsConfig: {
+      compilerOptions: {
+        // Without this, search will not work
+        // https://github.com/nuxt-themes/docus/issues/996
+        verbatimModuleSyntax: false
+      }
+    }
+  }
 });
