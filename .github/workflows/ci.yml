@@ -5,16 +5,11 @@ on:
   push:
   pull_request:
 jobs:
-  release:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup node env 🏗
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          check-latest: true
       - name: Verify markdown links
         uses: gaurav-nelson/github-action-markdown-link-check@v1
       - name: Bun Setup
@@ -24,4 +19,4 @@ jobs:
       - name: Install Dependencies
         run: bun install
       - name: Generate Static Website
-        run: bun generate
+        run: BASE_URL=/${{ github.event.repository.name }} bun generate

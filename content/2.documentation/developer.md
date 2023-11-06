@@ -18,6 +18,8 @@ For developer who needs to maintain this site.
 - CICD: GitHub Action
   - Used for auto building and auto releasing the static site.
   - Read more in [CICD](#cicd) section.
+- [Shacn Vue](https://www.shadcn-vue.com/)
+  - As of now, the site has been very simple, no ui library has been used. But in case in the future we need to use a ui library, I've added a popular ui library based on Tailwind called [Shacn Vue](https://www.shadcn-vue.com/). 
 
 ## Project Structure
 

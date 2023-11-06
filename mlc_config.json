@@ -1,0 +1,14 @@
+{
+    "ignorePatterns": [
+      {
+        "pattern": "^https://www.linkedin.com"
+      },
+      {
+        "pattern": "^https://linkedin.com"
+      }
+    ],
+    "replacementPatterns": [
+    ],
+    "httpHeaders": [
+    ]
+  }

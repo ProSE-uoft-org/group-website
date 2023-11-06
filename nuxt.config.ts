@@ -1,9 +1,7 @@
 import { z } from "zod";
 
 // in dev mode, no custom prefix, in order to properly load
-const defaultBaseUrl = process.env.NODE_ENV === "development" ? "/" : "/~prose"
-// const defaultBaseUrl = "/~prose"
-const baseUrl = z.string().regex(/\/.*/, 'A prefix base url should start with a slash /').default(defaultBaseUrl).parse(process.env.BASE_URL);
+const baseUrl = z.string().regex(/\/.*/, 'A prefix base url should start with a slash /').default('/').parse(process.env.BASE_URL);
 
 export default defineNuxtConfig({
   // https://github.com/nuxt-themes/docus
@@ -37,4 +35,13 @@ export default defineNuxtConfig({
       page_title: "UT-SE-Group-Website",
     },
   },
+  typescript: {
+    tsConfig: {
+      compilerOptions: {
+        // Without this, search will not work
+        // https://github.com/nuxt-themes/docus/issues/996
+        verbatimModuleSyntax: false
+      }
+    }
+  }
 });

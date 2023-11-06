@@ -22,12 +22,12 @@
   "dependencies": {
     "@nuxt/content": "^2.8.5",
     "@nuxt/image": "rc",
-    "@nuxtjs/tailwindcss": "^6.8.0",
+    "@nuxtjs/tailwindcss": "^6.9.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
-    "lucide-vue-next": "^0.288.0",
+    "lucide-vue-next": "^0.292.0",
     "nuxt-gtag": "^1.1.1",
-    "tailwind-merge": "^1.14.0",
+    "tailwind-merge": "^2.0.0",
     "tailwindcss-animate": "^1.0.7",
     "zod": "^3.22.4"
   }
