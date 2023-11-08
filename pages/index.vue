@@ -9,6 +9,7 @@ const facultyMembers = await useAllFacultyMemberQuery()
 const postDocMembers = await useAllStaffAndPostDocQuery()
   .sort({ name: 1 })
   .find();
+
 const gradStudents = await useAllGradStudentQuery().sort({ name: 1 }).find();
 const alumnis = await useAllAlumniQuery().sort({ year: -1 }).find();
 </script>

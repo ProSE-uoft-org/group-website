@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps<{ name: string; avatar?: string; website?: string }>();
+defineProps<{ name: string; avatar?: string; website: string }>();
 const config = useRuntimeConfig();
 
 /**
