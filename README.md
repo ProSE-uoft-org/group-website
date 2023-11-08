@@ -18,4 +18,4 @@ bun generate    # generate static files
 
 CICD has been setup to auto build the site and generate a release for every commit to the `main` branch. The release asset is a tarball of the static site files. The tarball is named `static_website.tar.gz`.
 
-For more details about how to contribute to this website and maintain/deploy it, read [content/2.documentation/contributor.md](./content/2.documentation/contributor.md) and [content/2.documentation/developer.md](./content/2.documentation/developer.md).
+For more details about how to contribute to this website and maintain/deploy it, read [content/3.documentation/contributor.md](./content/3.documentation/contributor.md) and [content/3.documentation/developer.md](./content/3.documentation/developer.md).
