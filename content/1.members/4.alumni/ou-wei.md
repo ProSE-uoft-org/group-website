@@ -1,6 +1,6 @@
 ---
 name:  Ou Wei
-description: Assistant Professor at Nanjing University of Aeronautics and Astronautic
+description: PhD, Assistant Professor at Nanjing University of Aeronautics and Astronautic
 year: 2009
 ---
 
