@@ -1,6 +1,6 @@
 ---
 name: Zachary Kincaid
-description: PhD, Assistant Professor in Princeton
+description: PhD, Associate Professor at Princeton
 website: https://www.cs.princeton.edu/~zkincaid/
 year: 2016
 ---
