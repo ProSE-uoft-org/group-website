@@ -1,5 +1,5 @@
 ---
 name: Maryam Mehri Dehnavi
-avatar: https://xnning.github.io/tor/imgs/Dehnavi.jpeg
+avatar: https://www.cs.toronto.edu/~mmehride/me.jpg
 website: https://www.cs.toronto.edu/~mmehride/
 ---
