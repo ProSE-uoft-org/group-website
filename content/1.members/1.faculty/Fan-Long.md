@@ -1,5 +1,5 @@
 ---
 name: Fan Long
-avatar: https://xnning.github.io/tor/imgs/long.jpeg
+avatar: https://www.cs.toronto.edu/~fanl/pics/me.jpeg
 website: https://www.cs.toronto.edu/~fanl/
 ---
