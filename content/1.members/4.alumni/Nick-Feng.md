@@ -1,6 +1,7 @@
 ---
 name: Nick Feng
-description: PhD Student
+description: PhD, Applied Scientist at AWS
 website: https://www.cs.toronto.edu/~fengnick/
 avatar: /avatar/nick-feng.jpg
+year: 2024
 ---
