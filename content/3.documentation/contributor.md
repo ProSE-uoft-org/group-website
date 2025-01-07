@@ -47,8 +47,8 @@ Go to `content/1.members` directory, based on the member's role, add a new markd
 name: Huakun Shen
 description: Master Student
 avatar: https://github.com/HuakunShen.png
-# website: https://huakunshen.com
-website: /members/grad-student/huakun-shen
+website: https://huakunshen.com
+# website: /members/grad-student/huakun-shen
 email: huakun.shen@huakunshen.com
 year: 2023 # necessary for an alumni
 ---
@@ -72,10 +72,7 @@ It can be a remote image, or a local image. If it's a local image, you should pu
 
 If you include the `website` field, clicking on your avatar will link to the website you specified.
 
-<!-- markdown-link-check-disable-next-line -->
-Otherwise it by default will link to your profile on this website. For example, for me it will link to [/members/grad-student/huakun-shen](/members/grad-student/huakun-shen)
-If you include the `website` field, clicking on your avatar will link to the website you specified. 
-Otherwise it by default will link to your profile on this website. For example, for me it will link to [/members/grad-student/huakun-shen](/members/grad-student/huakun-shen). <!-- markdown-link-check-disable-line -->
+Otherwise it by default will link to your profile on this website.
 
 <details>
 <summary>More Details</summary>
