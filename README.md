@@ -5,7 +5,7 @@ group at the University of Toronto Computer Science department (https://www.cs.t
 Containing information about the group, its members, and its projects.
 
 Please help maintain the website via pull requests.
-The website gets udpated every day at 9am automatically.
+The website gets updated every day at 9am automatically.
 
 
 ## Development
