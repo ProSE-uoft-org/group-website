@@ -27,7 +27,7 @@ For developer who needs to maintain this site.
 - `components/` directory contains all the components used in this site, such as how a member is displayed and how members are listed.
 - All content is in `content` directory.
   - [`@nuxt/content`](https://content.nuxt.com/) allows querying the markdown files as a database.
-  - The documentation page basically mirrors the directory structure of `content/` on file system. Markdown files in this folder will be rendered as HTML pages and searchable. Read [@nuxt/content/markdown](https://content.nuxt.com/usage/markdown) for advanced usage such as hiding a page in production build.
+  - The documentation page basically mirrors the directory structure of `content/` on file system. Markdown files in this folder will be rendered as HTML pages and searchable. Read [@nuxt/content/markdown](https://content.nuxt.com/docs/files/markdown) for advanced usage such as hiding a page in production build.
 - The hooks for loading members from markdown files are in `composables/members-query.ts`.
   - Read [@nuxt/content/query-content](https://content.nuxt.com/composables/query-content) for how it works.
 
