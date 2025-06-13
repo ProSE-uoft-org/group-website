@@ -1,7 +1,7 @@
 ---
 name: Vladyslav Nekriach
 description: MSc
-year:2025
+year: 2025
 avatar: /avatar/vladyslav-nekriach.jpg
 email: vladyslav.nekriach@gmail.com
 ---
