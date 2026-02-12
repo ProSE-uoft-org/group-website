@@ -95,8 +95,6 @@ This site is built with [`@nuxt/content`](https://content.nuxt.com/) and [`docus
 
 For example `<span class="bg-red-300">Hello World</span>` gives you <span class="bg-red-500">Hello World</span>.
 
-Read https://docus.dev/api/components for built-in components you can use. Read author's example at `content/1.members/3.grad-student/Huakun-Shen.md`.
-
 ## Editing Your Content
 
 Simple content modification can be done fully in browser without a dev environment. In the documentation page, there is a "Edit this page" button at the bottom of the page. Click it to edit the markdown file of the current page.
