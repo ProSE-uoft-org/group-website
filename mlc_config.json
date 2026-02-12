@@ -5,6 +5,9 @@
       },
       {
         "pattern": "^https://linkedin.com"
+      },
+      {
+        "pattern": "^https://yanningchen.me"
       }
     ],
     "replacementPatterns": [
