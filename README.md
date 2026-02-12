@@ -1,11 +1,12 @@
 # ProSE: Programming Languages and Software Engineering
 
 This is a group website for the Programming Languages and Software Engineering
-group at the University of Toronto Computer Science department (https://www.cs.toronto.edu/~prose/).
-Containing information about the group, its members, and its projects.
+group at the University of Toronto:
+
+https://www.cs.toronto.edu/~prose/
 
 Please help maintain the website via pull requests.
-The website gets updated every day at 9am automatically.
+The website updates itself every day at 9am ET.
 
 
 ## Development
