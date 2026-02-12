@@ -26,7 +26,6 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "lucide-vue-next": "^0.292.0",
-    "nuxt-gtag": "^1.1.1",
     "tailwind-merge": "^2.0.0",
     "tailwindcss-animate": "^1.0.7",
     "zod": "^3.22.4"

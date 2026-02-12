@@ -15,7 +15,6 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxt/image",
     "@nuxtjs/tailwindcss",
-    "nuxt-gtag",
   ],
   app: {
     // https://nuxt.com/docs/api/nuxt-config#baseurl
@@ -26,14 +25,6 @@ export default defineNuxtConfig({
     public: {
       baseURL: baseUrl
     }
-  },
-  gtag: {
-    // The Google Analytics 4 property ID to use for tracking
-    id: "G-887SRCJHXZ",
-    // Additional configuration for the Google Analytics 4 property
-    config: {
-      page_title: "UT-SE-Group-Website",
-    },
   },
   typescript: {
     tsConfig: {
