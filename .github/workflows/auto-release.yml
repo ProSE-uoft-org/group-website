@@ -24,7 +24,7 @@ jobs:
         uses: oven-sh/setup-bun@v1
         with:
           bun-version: latest
-      - name: INstall Dependencies
+      - name: Install Dependencies
         run: bun install
       - name: Generate Static Website
         run: |
