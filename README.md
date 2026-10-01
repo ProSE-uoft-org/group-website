@@ -11,27 +11,37 @@ The website updates itself every day at 9am ET.
 ## Add or Edit a Member
 
 The site is a single page listing the group members. Each member is a markdown
-file in `content/1.members`, in the directory matching their role (e.g.
-`content/1.members/3.grad-student/Huakun-Shen.md`). Only the front matter is used:
+file in `content/1.members`, in the directory matching their role. Only the
+front matter is used.
+
+To add a graduate student, create `content/1.members/3.grad-student/First-Last.md`
+and open a pull request:
 
 ```markdown
 ---
 name: Huakun Shen
-description: Master Student
-avatar: https://github.com/HuakunShen.png
 website: https://huakunshen.com
-year: 2023 # necessary for an alumni
+avatar: https://github.com/HuakunShen.png
 ---
 ```
 
 - `name` is the only required field.
-- `website`: if given, the member's entry links to it; otherwise the entry is not clickable.
-- `avatar`: a remote image url, or a local image. Put local images in
-  `public/avatar` and refer to them as e.g. `/avatar/shen.png`. Alumni are
-  listed without avatars.
-- `year` and `description` are shown for alumni, who are sorted by `year`.
+- `website` (optional): makes the entry clickable.
+- `avatar` (optional): an image url, or a local image added to `public/avatar`
+  and referred to as e.g. `/avatar/shen.png`.
 
-## Development
+To move a graduate student to alumni, move their file to `content/1.members/4.alumni` and add:
+
+```markdown
+year: 2023
+description: PhD, Assistant Professor at ...
+```
+
+Alumni are listed as `Name (year, description)` without avatars, sorted by
+`year` (required). `description` is the degree, optionally followed by their
+current position.
+
+## Development Notes
 
 [Bun](https://bun.sh/) is used as the package manager. Nodejs and npm also work.
 
