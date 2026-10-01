@@ -1,34 +1,39 @@
 <script setup lang="ts">
+import type { PersonSchema } from "~/utils/types";
+
 useHead({
-  title: "UofT",
+  title: "UofT PLSE Group",
 });
 
-const facultyMembers = await useAllFacultyMemberQuery()
-  .sort({ name: 1 })
-  .find();
-const postDocMembers = await useAllStaffAndPostDocQuery()
-  .sort({ name: 1 })
-  .find();
+// Member files in content/1.members are only used as data for this page.
+function useMembers(group: string, sortBy: Record<string, 1 | -1>) {
+  return useAsyncData(group, () =>
+    queryContent("members", group)
+      .only(["name", "description", "avatar", "website", "year"])
+      .sort(sortBy)
+      .find() as Promise<PersonSchema[]>
+  );
+}
 
-const gradStudents = await useAllGradStudentQuery().sort({ name: 1 }).find();
-const alumnis = await useAllAlumniQuery().sort({ year: -1 }).find();
+const { data: facultyMembers } = await useMembers("faculty", { name: 1 });
+const { data: postDocMembers } = await useMembers("staff-and-postdoc", { name: 1 });
+const { data: gradStudents } = await useMembers("grad-student", { name: 1 });
+const { data: alumnis } = await useMembers("alumni", { year: -1 });
 </script>
 <template>
-  <div class="flex justify-center">
+  <div class="flex justify-center px-4 py-10">
     <div class="max-w-screen-lg">
-      <!-- <img src="/UofT.jpeg" /> -->
-      <h1 class="text-ut text-4xl font-bold">
+      <h1 class="text-4xl font-bold">
         University of Toronto PLSE Group
       </h1>
       <h2 class="text-3xl mt-10">Faculty</h2>
-      <PeopleList :people="facultyMembers" />
+      <PeopleList :people="facultyMembers ?? []" />
       <h2 class="text-3xl mt-10">Staff and Post Doc</h2>
-      <PeopleList :people="postDocMembers" />
+      <PeopleList :people="postDocMembers ?? []" />
       <h2 class="text-3xl mt-10">Grad Student</h2>
-      <PeopleList :people="gradStudents" />
+      <PeopleList :people="gradStudents ?? []" />
       <h2 class="text-3xl mt-10">Alumni</h2>
-      <!-- <PeopleList :people="alumnis" /> -->
-      <AlumniList class="mt-3" :people="alumnis" />
+      <AlumniList class="mt-3" :people="alumnis ?? []" />
     </div>
   </div>
 </template>

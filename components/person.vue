@@ -1,39 +1,36 @@
 <script setup lang="ts">
-defineProps<{ name: string; avatar?: string; website: string }>();
+defineProps<{ name: string; avatar?: string; website?: string }>();
 const config = useRuntimeConfig();
 
 /**
- * When a subpath is used as base url, relative paths used in this site will break, like links to avatar and markdown files.
- * This function will fix it by adding baseUrl if it's a local relative path link.
+ * When a subpath is used as base url, local paths used in this site will break, like links to avatars.
+ * This function will fix it by adding baseUrl if it's a local path.
  */
 function composeUrl(baseUrl: string, url: string): string {
   if (url.startsWith("/")) {
-    // image is a local image
+    // is a local file
     if (baseUrl.endsWith("/")) {
       return `${baseUrl.substring(0, baseUrl.length - 1)}${url}`;
     } else {
       return `${baseUrl}${url}`;
     }
   } else {
-    // is remote image
+    // is a remote url
     return url;
   }
 }
-
 </script>
 <template>
   <div class="flex justify-center p-5">
-    <NuxtLink class="flex flex-col" :href="composeUrl(config.public.baseURL, website)" target="_blank">
-      <div class="img-container overflow-hidden relative h-52 w-40">
+    <!-- Only people with a website are clickable -->
+    <component
+      :is="website ? 'a' : 'div'"
+      class="flex flex-col"
+      v-bind="website ? { href: website, target: '_blank', rel: 'noopener noreferrer' } : {}"
+    >
+      <div class="overflow-hidden relative h-52 w-40">
         <img
-          v-if="avatar"
-          :src="composeUrl(config.public.baseURL, avatar)"
-          alt=""
-          class="rounded-lg object-cover object-top w-full h-full"
-        />
-        <img
-          v-else
-          src="/person-placeholder.jpeg"
+          :src="composeUrl(config.public.baseURL, avatar || '/person-placeholder.jpeg')"
           alt=""
           class="rounded-lg object-cover object-top w-full h-full"
         />
@@ -41,6 +38,6 @@ function composeUrl(baseUrl: string, url: string): string {
       <p class="text-center">
         {{ name }}
       </p>
-    </NuxtLink>
+    </component>
   </div>
 </template>

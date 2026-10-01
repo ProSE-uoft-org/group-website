@@ -1,6 +1,6 @@
-<!-- Aluni are listed differently, no avatar will be displayed -->
+<!-- Alumni are listed differently, no avatar will be displayed -->
 <script setup lang="ts">
-import { PersonSchema } from "~/utils/types";
+import type { PersonSchema } from "~/utils/types";
 
 defineProps<{ people: PersonSchema[] }>();
 function computeContent(person: PersonSchema) {
