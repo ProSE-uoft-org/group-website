@@ -12,13 +12,13 @@
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.2.0",
-    "@types/node": "^20.8.2",
+    "@types/node": "^26.6.3",
     "eslint": "^8.50.0",
-    "nuxt": "^3.7.4"
+    "nuxt": "^3.21.11"
   },
   "dependencies": {
-    "@nuxt/content": "^2.8.5",
-    "@nuxtjs/tailwindcss": "^6.9.4",
+    "@nuxt/content": "^2.13.4",
+    "@nuxtjs/tailwindcss": "^6.14.0",
     "zod": "^3.22.4"
   }
 }
