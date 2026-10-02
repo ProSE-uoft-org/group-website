@@ -8,6 +8,9 @@
       },
       {
         "pattern": "^https://yanningchen.me"
+      },
+      {
+        "pattern": "^https://scholar.google.com"
       }
     ],
     "replacementPatterns": [
