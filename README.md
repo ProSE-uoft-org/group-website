@@ -11,8 +11,7 @@ The website updates itself every day at 9am ET.
 ## Add or Edit a Member
 
 The site is a single page listing the group members. Each member is a markdown
-file in `content/1.members`, in the directory matching their role. Only the
-front matter is used.
+file in `content/1.members`, in the directory matching their role.
 
 To add a graduate student, create `content/1.members/3.grad-student/First-Last.md`
 and open a pull request:
