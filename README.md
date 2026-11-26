@@ -3,13 +3,13 @@
 This is a group website for the Programming Languages and Software Engineering
 group at the University of Toronto: https://www.cs.toronto.edu/~prose/
 
+The site is a single page listing the group members. Each member is a markdown
+file in `content/1.members`, in the directory matching their role.
+
 Please help maintain the website via pull requests.
 The website updates itself every day at 9am ET.
 
-## Add a Member
-
-The site is a single page listing the group members. Each member is a markdown
-file in `content/1.members`, in the directory matching their role.
+## Add a member
 
 To add a graduate student, create `content/1.members/3.grad-student/First-Last.md`
 and open a pull request:
